@@ -1,6 +1,8 @@
 espower-traceur
 ========================
 
+[![Build Status](https://travis-ci.org/yosuke-furukawa/espower-traceur.svg?branch=master)](https://travis-ci.org/yosuke-furukawa/espower-traceur)
+
 power-assert instrumentor for [Traceur Compiler](https://github.com/google/traceur-compiler/)
 
 DESCRIPTION
