@@ -1,0 +1,42 @@
+{
+  "name": "espower-traceur",
+  "version": "0.0.1",
+  "description": "espower for traceur compiler",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require './guess' test/**/*.js && mocha --require './test_loader/espower-traceur-loader' test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yosuke-furukawa/espower-traceur"
+  },
+  "keywords": [
+    "espower",
+    "traceur",
+    "es6"
+  ],
+  "author": "yosuke-furukawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yosuke-furukawa/espower-traceur/issues"
+  },
+  "directories": {
+    "test": "test/tobe_instrumented"
+  },
+  "homepage": "https://github.com/yosuke-furukawa/espower-traceur",
+  "dependencies": {
+    "convert-source-map": "^0.4.1",
+    "espower-source": "^0.10.0",
+    "minimatch": "^1.0.0",
+    "traceur": "0.0.74",
+    "xtend": "^4.0.0"
+  },
+  "devDependencies": {
+    "empower": "^0.10.0",
+    "expect.js": "^0.3.1",
+    "jshint": "^2.5.10",
+    "mocha": "^2.0.1",
+    "power-assert": "^0.10.0",
+    "power-assert-formatter": "^0.10.1"
+  }
+}
