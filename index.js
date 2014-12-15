@@ -32,7 +32,10 @@ function espowerTraceur (options) {
   };
   traceur.require.makeDefault(function (filename) {
     // Don't compile our dependencies.
-    return filename.indexOf('node_modules') === -1;
+    if (filename.indexOf('node_modules') !== -1) return false;
+    // Don't compile files not included our test dirs.
+    if (!minimatch(filename, pattern)) return false;
+    return true;
   });
 }
 
