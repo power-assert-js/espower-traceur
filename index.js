@@ -23,10 +23,11 @@ function espowerTraceur (options) {
       return originCompile(contents, opts, srcPath, destPath);
     }
     var compiled = originCompile(contents, opts, srcPath, destPath);
+    var espowerOptions = extend({ sourceRoot: options.cwd }, options.espowerOptions);
     var espowered = espowerSource(
       compiled,
       srcPath,
-      options
+      espowerOptions
     );
     return espowered;
   };
